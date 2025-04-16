@@ -1,0 +1,17 @@
+{
+  "name": "tgr",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  // "workspaceMount": "source=tgr,target=/workspace,type=volume",
+  // "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--userns=keep-id"
+  ],
+  "containerUser": "vscode",
+  // "updateRemoteUserUID": true,
+  // "containerEnv": {
+  //     "HOME": "/home/vscode"
+  // }
+}
